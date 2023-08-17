@@ -52,6 +52,8 @@ ul {
 .card-flex {
     display: flex;
     justify-content: space-evenly;
+
+    flex-wrap: wrap;
 }
 
 a {

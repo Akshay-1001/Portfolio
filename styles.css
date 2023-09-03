@@ -72,7 +72,8 @@ a {
 }
 
 img {
-    aspect-ratio: 1/1;
+    aspect-ratio: 4/3;
+    max-height: 30vh;
 }
 
 .title {
@@ -115,28 +116,4 @@ li > a:hover{
     background:  linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,212,1) 50%, rgba(252,69,176,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.sticky-note {
-    box-shadow: 5px 15px 10px rgba(127, 127, 127, 0.7);
-    background-color: 	#fff740;
-
-    height: 30vh;
-    width: 230px;
-    padding: 0 15px;
-
-    position: absolute;
-    bottom: -210px;
-    right: 50px;
-
-    font-family: 'Permanent Marker', cursive;
-}
-
-.sticky-note > ul {
-    color: #2a2a2a;
-}
-
-.sticky-note:hover {
-    bottom: -150px;
-    transition: 2s;
 }

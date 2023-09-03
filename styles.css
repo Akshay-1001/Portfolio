@@ -72,8 +72,7 @@ a {
 }
 
 img {
-    max-height: 30vh;
-    max-width: 400px;
+    aspect-ratio: 1/1;
 }
 
 .title {

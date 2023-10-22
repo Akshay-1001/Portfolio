@@ -3,130 +3,253 @@
     padding: 0;
 
     /* color variables */
-    --primary-color : #b19cd9;
-    --secondary-color: #967bb6;
-    --gray : #636164;
+    --primary : #7A31FE;
+    --secondary: #DCD0FF;
+    --green : #98FB98;
+    --orange : #FFDAB9;
+    --black : #333333;
     --white : #f4f4f4;
 
     scroll-behavior: smooth;
+    color: var(--black);
 }
 
 body {
-    color: var(--white);
-    font-family: Gilroy, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: var(--primary-color);
-}
+    font-family: Consolas, "Fira Mono", "roboto sans", monospace;
+    background-color: var(--white);
+    color: var(--black);
 
-/* scrollbar */
-
-body::-webkit-scrollbar-thumb {
-    background: var(--white);
-    border-radius: 5px;
-}
-
-body::-webkit-scrollbar {
-    width: 10px;
-}
-
-.projects-con::-webkit-scrollbar{
-    width: 0px;
-}
-
-/* Icon */
-
-.links img {
-    height: 1.5rem;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-
-    padding: 2% 5%;
-    height: 10vh;
-}
-
-header > a > img {
-    height: 5rem;
-    border-radius: 50%;   
-    cursor: pointer;
-}
-
-#intro-sec {
-    font-size: 2.5rem;
-    cursor: default;
-    height: 80vh;
-
-    margin: 5% auto;
-}
-
-#projects-sec {
-    height: 80vh;
-}
-
-#projects-sec aside {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    overflow: scroll;
-}
-
-#projects-sec article {
-    height: 300px;
-    border-radius: 5px;
-    background-color: var(--secondary-color);
-
-    margin: 0 2rem;
-}
-
-#projects-sec img {
-    max-height: 15rem;
-    aspect-ratio: 4/3;
-    border-radius: 5px;
-}
-
-#projects-sec aside {
-    margin: 3rem 0;
+    padding: 0 5rem;
 }
 
 a {
     text-decoration: none;
+    color: var(--black);
+}
+
+/* Nav bar */
+
+header,
+ul {
+    display: flex;
+}
+
+header {
+    font-size: 2rem;
+
+    margin: 1rem;
+    height: 10vh;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: space-evenly; 
+}
+
+header li {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.logo img {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 0.15rem solid var(--black);
+}
+
+/* hero section */
+
+#Home {
+    font-size: 4.5rem;
+    font-weight: bolder;
+
+    height: 90vh;
+
+    cursor: default;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#mark {
+    font-size: 45rem;
+    margin-left: -20rem;
+}
+
+.name {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.grn-capsule {
+    background-color: var(--green);
+    border-radius: 5rem;
+    box-shadow: -10px 10px 0 0 var(--black);
+}
+
+.grn-capsule span {
+    color: var(--green);
+}
+
+.org-rectangle {
+    background-color: var(--orange);
+    transform: rotate(-2.004deg);
+}
+
+/* Project section */
+#Projects {
+    padding: 0 5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+.my-work {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.project-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    max-height: 50rem;
+    max-width: 30rem;
+    margin: 6rem;
+
+    border: 0.15rem solid var(--black);
+    box-shadow: -6px 6px 0 0 var(--black);
+}
+
+.project-card img {
+    max-height: 30rem;
+    aspect-ratio: 1;
+}
+
+.label {
+    height: 3rem;
+    background-color: var(--secondary);
+}
+
+.more-btn-pattern {
+    align-self: center;
+}
+
+.more-btn {
+    font: inherit;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    padding: 1rem 3rem;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+}
+
+.more-btn:hover {
+    background-color: var(--white);
+}
+
+/* footer */
+
+footer {
+    height: 90vh;
+    padding: 5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* contact me */
+
+.grid-dot-pattern {
+    height: 70vh;
+    width: 100%;
+
+    --dot-bg: #f5f5f5;
+    --dot-color: #333333;
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background: 
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-with-me {
+    height: 50vh;
+    background-color: var(--white);
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    padding: 0 4rem;
+}
+
+.work-with-me h1 {
+    font-size: 5rem;
+}
+
+.contact-btn {
+    font: inherit;
+    font-size: 2rem;
+
+    cursor: pointer;
+    background-color: var(--green);
+    border: 2px solid var(--black);
+
+    padding: 1rem;
+}
+
+/* social links */
+
+.social-links {
+    background-color: var(--black);
+    border-radius: 0.2rem;
+    height: 5rem;
+    width: 90%;
+    padding: 0 5rem;
+    margin: 5rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 20%;
+}
+
+.my-name p{
+    font-size: 1.5rem;
     color: var(--white);
 }
 
-a > h2 {
-    padding-left: 1rem;
-}
-
-#intro-sec,
-#skills-sec,
-#projects-sec {
-    padding: 0 10%;
-}
-
-#skills-sec h1,
-#projects-sec h1{
-    font-size: 2.5rem;
-}
-
-footer {
-    /* height: 30vh; */
-    background-color: var(--gray);
-}
-
-footer > aside {
+.msg p{
     font-size: 1.5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.links {
-    padding: 50px 0;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    font-family: "Fira Mono";
+    font-weight: bolder;
 }

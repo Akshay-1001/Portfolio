@@ -229,6 +229,7 @@ footer {
     height: 5rem;
     width: 90%;
     padding: 0 2.5rem;
+    margin: 1rem 0;
 
     display: flex;
     justify-content: space-between;
@@ -251,7 +252,7 @@ footer {
     font-weight: bolder;
 }
 
-/* Mobile View */
+/* low res Laptop */
 
 @media screen and (max-width:1250px){
     h1 {
@@ -269,5 +270,48 @@ footer {
     }
     .social-icons {
         width: 40%;
+    }
+}
+
+/* tablet */
+
+@media screen and (max-width:790px) {
+    body {
+        padding: 0 1rem;
+    }
+    #Home {
+        align-items: flex-start;
+        margin: 5rem 0;
+    }
+    #mark h1 {
+        font-size: 15rem;
+    }
+    #Projects {
+        padding: 0;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width:650px){
+    header {
+        height: 20vh;
+        flex-direction: column-reverse;
+    }
+    nav {
+        width: 90%;
+    }
+    #mark h1 {
+        font-size: 7rem;
+        margin-top: -10rem;
+    }
+    #mark {
+        align-self: center;
+    }
+    .social-icons {
+        width: 90%;
+    }
+    .more-btn-pattern {
+        margin: 3rem 0;
     }
 }

@@ -18,13 +18,18 @@ body {
     font-family: Consolas, "Fira Mono", "roboto sans", monospace;
     background-color: var(--white);
     color: var(--black);
+    font-size: 1rem;
 
-    padding: 0 5rem;
+    padding: 0 3rem;
 }
 
 a {
     text-decoration: none;
     color: var(--black);
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 /* Nav bar */
@@ -35,7 +40,6 @@ ul {
 }
 
 header {
-    font-size: 2rem;
 
     margin: 1rem;
     height: 10vh;
@@ -59,7 +63,7 @@ header li {
 }
 
 .logo img {
-    height: 70px;
+    height: 50px;
     aspect-ratio: 1;
     border-radius: 50%;
     border: 0.15rem solid var(--black);
@@ -68,7 +72,6 @@ header li {
 /* hero section */
 
 #Home {
-    font-size: 4.5rem;
     font-weight: bolder;
 
     height: 90vh;
@@ -81,10 +84,12 @@ header li {
     align-items: center;
 }
 
+#mark h1 {
+    font-size: 35rem;
+}
 
 #mark {
-    font-size: 45rem;
-    margin-left: -20rem;
+    margin-left: -10rem;
 }
 
 .name {
@@ -115,7 +120,6 @@ header li {
     flex-direction: column;
 }
 .my-work {
-    font-size: 4rem;
     font-weight: bolder;
 }
 
@@ -124,26 +128,27 @@ header li {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 0 3rem;
 }
 
 .project-card {
-    max-height: 50rem;
-    max-width: 30rem;
-    margin: 6rem;
+    max-height: 35rem;
+    max-width: 25rem;
+    margin: 2rem 4rem;
 
     border: 0.15rem solid var(--black);
     box-shadow: -6px 6px 0 0 var(--black);
 }
 
 .project-card img {
-    max-height: 30rem;
+    max-height: 25rem;
     aspect-ratio: 1;
 }
 
 .label {
     height: 3rem;
     background-color: var(--secondary);
-}
+} 
 
 .more-btn-pattern {
     align-self: center;
@@ -151,7 +156,6 @@ header li {
 
 .more-btn {
     font: inherit;
-    font-size: 1.5rem;
 
     cursor: pointer;
 
@@ -184,7 +188,7 @@ footer {
 
     --dot-bg: #f5f5f5;
     --dot-color: #333333;
-    --dot-size: 1px;
+    --dot-size: 2px;
     --dot-space: 22px;
     background: 
         linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -197,23 +201,18 @@ footer {
 }
 
 .work-with-me {
-    height: 50vh;
+    height: 40vh;
     background-color: var(--white);
 
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 
-    padding: 0 4rem;
-}
-
-.work-with-me h1 {
-    font-size: 5rem;
+    padding: 0 5rem;
 }
 
 .contact-btn {
     font: inherit;
-    font-size: 2rem;
 
     cursor: pointer;
     background-color: var(--green);
@@ -229,8 +228,7 @@ footer {
     border-radius: 0.2rem;
     height: 5rem;
     width: 90%;
-    padding: 0 5rem;
-    margin: 5rem 0;
+    padding: 0 2.5rem;
 
     display: flex;
     justify-content: space-between;
@@ -244,13 +242,32 @@ footer {
     width: 20%;
 }
 
-.my-name p{
-    font-size: 1.5rem;
+.my-name h3{
     color: var(--white);
 }
 
 .msg p{
-    font-size: 1.5rem;
     font-family: "Fira Mono";
     font-weight: bolder;
+}
+
+/* Mobile View */
+
+@media screen and (max-width:1250px){
+    h1 {
+        font-size: 2rem;
+    }
+    #mark h1 {
+        font-size: 20rem;
+    }
+    .project-card {
+        margin: 1rem;
+    }
+    .project-card img {
+        max-height: 25rem;
+        max-width: 15rem;
+    }
+    .social-icons {
+        width: 40%;
+    }
 }

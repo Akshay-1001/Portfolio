@@ -212,13 +212,15 @@ footer {
 }
 
 .contact-btn {
-    font: inherit;
+    width: 55%;
+    font-weight: bold;
 
     cursor: pointer;
     background-color: var(--green);
     border: 2px solid var(--black);
 
     padding: 1rem;
+
 }
 
 /* social links */
@@ -250,68 +252,4 @@ footer {
 .msg p{
     font-family: "Fira Mono";
     font-weight: bolder;
-}
-
-/* low res Laptop */
-
-@media screen and (max-width:1250px){
-    h1 {
-        font-size: 2rem;
-    }
-    #mark h1 {
-        font-size: 20rem;
-    }
-    .project-card {
-        margin: 1rem;
-    }
-    .project-card img {
-        max-height: 25rem;
-        max-width: 15rem;
-    }
-    .social-icons {
-        width: 40%;
-    }
-}
-
-/* tablet */
-
-@media screen and (max-width:790px) {
-    body {
-        padding: 0 1rem;
-    }
-    #Home {
-        align-items: flex-start;
-        margin: 5rem 0;
-    }
-    #mark h1 {
-        font-size: 15rem;
-    }
-    #Projects {
-        padding: 0;
-    }
-}
-
-/* Mobile */
-
-@media screen and (max-width:650px){
-    header {
-        height: 20vh;
-        flex-direction: column-reverse;
-    }
-    nav {
-        width: 90%;
-    }
-    #mark h1 {
-        font-size: 7rem;
-        margin-top: -10rem;
-    }
-    #mark {
-        align-self: center;
-    }
-    .social-icons {
-        width: 90%;
-    }
-    .more-btn-pattern {
-        margin: 3rem 0;
-    }
 }

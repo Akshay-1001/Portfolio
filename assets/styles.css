@@ -98,9 +98,12 @@ header li {
 }
 
 .grn-capsule {
+    font: inherit;
+    width: 12rem;
     background-color: var(--green);
     border-radius: 5rem;
-    box-shadow: -10px 10px 0 0 var(--black);
+    border: none;
+    box-shadow: -7px 7px 0 0 var(--black);
 }
 
 .grn-capsule span {
@@ -113,6 +116,7 @@ header li {
 }
 
 /* Project section */
+
 #Projects {
     padding: 0 5rem;
 
@@ -152,6 +156,7 @@ header li {
 
 .more-btn-pattern {
     align-self: center;
+    display: none;
 }
 
 .more-btn {
@@ -220,8 +225,9 @@ footer {
     border: 2px solid var(--black);
 
     padding: 1rem;
-
 }
+
+
 
 /* social links */
 

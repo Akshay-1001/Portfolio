@@ -73,6 +73,9 @@
         width: 100%;
         padding: 0;
     }
+    #hero {
+        line-height: 35px;
+    }
 }
 
 /* low res Moblie */

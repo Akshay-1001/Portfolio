@@ -99,7 +99,7 @@ header li {
 
 .grn-capsule {
     font: inherit;
-    width: 12rem;
+    width: 60%;
     background-color: var(--green);
     border-radius: 5rem;
     border: none;
@@ -135,12 +135,19 @@ header li {
     padding: 0 3rem;
 }
 
+
 .project-card {
     max-height: 35rem;
     max-width: 25rem;
     margin: 2rem 4rem;
 
     border: 0.15rem solid var(--black);
+
+    position: relative;
+    transition: 0.5s !important;
+}
+
+.project-card:hover{
     box-shadow: -6px 6px 0 0 var(--black);
 }
 
@@ -225,9 +232,13 @@ footer {
     border: 2px solid var(--black);
 
     padding: 1rem;
+    position: relative;
+    transition: 0.5s !important;
 }
 
-
+.contact-btn:hover {
+    box-shadow: -5px 5px 0 0 var(--black);
+}
 
 /* social links */
 

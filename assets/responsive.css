@@ -56,12 +56,8 @@
     nav {
         width: 90%;
     }
-    #mark h1 {
-        font-size: 10rem;
-        margin-top: -10rem;
-    }
     #mark {
-        align-self: center;
+        display: none;
     }
     .social-icons {
         width: 90%;
@@ -87,10 +83,6 @@
     #Home {
         flex-direction: column;
         margin-top: -3rem;
-    }
-    #mark {
-        align-self: flex-end;
-        margin: 0rem;
     }
     .my-name {
         display: none;

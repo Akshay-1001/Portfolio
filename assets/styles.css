@@ -144,11 +144,18 @@ header li {
     border: 0.15rem solid var(--black);
 
     position: relative;
-    transition: 0.5s !important;
+    top: 0;
+    right: 0;
+
+    transition: 0.3s !important;
+
+    box-shadow: -5px 5px 0 0 var(--black);
 }
 
-.project-card:hover{
-    box-shadow: -6px 6px 0 0 var(--black);
+.project-card:active {
+    top: 0.4rem;
+    right: 0.4rem;
+    box-shadow: none;
 }
 
 .project-card img {
@@ -159,25 +166,10 @@ header li {
 .label {
     height: 3rem;
     background-color: var(--secondary);
-} 
+}
 
 .more-btn-pattern {
-    align-self: center;
     display: none;
-}
-
-.more-btn {
-    font: inherit;
-
-    cursor: pointer;
-
-    padding: 1rem 3rem;
-    border: 1px solid var(--black);
-    background-color: var(--white);
-}
-
-.more-btn:hover {
-    background-color: var(--white);
 }
 
 /* footer */
@@ -223,6 +215,8 @@ footer {
     padding: 0 5rem;
 }
 
+/* button animation */
+
 .contact-btn {
     width: 55%;
     font-weight: bold;
@@ -233,11 +227,17 @@ footer {
 
     padding: 1rem;
     position: relative;
-    transition: 0.5s !important;
+    top: 0;
+    right: 0;
+    transition: 0.3s !important;
+
+    box-shadow: -5px 5px 0 0 var(--black);
 }
 
-.contact-btn:hover {
-    box-shadow: -5px 5px 0 0 var(--black);
+.contact-btn:active {
+    top: 0.4rem;
+    right: 0.4rem;
+    box-shadow: none;
 }
 
 /* social links */

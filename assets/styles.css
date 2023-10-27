@@ -103,11 +103,20 @@ header li {
     background-color: var(--green);
     border-radius: 5rem;
     border: none;
+    cursor: pointer;
     box-shadow: -7px 7px 0 0 var(--black);
+    user-select: default;
+
+    position: relative;
+    top: 0;
+    right: 0;
+    transition: 0.3s !important;
 }
 
-.grn-capsule span {
-    color: var(--green);
+.grn-capsule:active {
+    top: 0.4rem;
+    right: 0.4rem;
+    box-shadow: none;
 }
 
 .org-rectangle {

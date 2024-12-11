@@ -3,17 +3,17 @@
   "name": "My Portfolio",
   "icons": [
     {
-      "src": ".ico",
+      "src": "A_logo_184x192_whitebg.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": ".png",
+      "src": "akshay.web@184x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "512.png",
+      "src": "akshay.web@1188x1212.png",
       "type": "image/png",
       "sizes": "512x512"
     }
